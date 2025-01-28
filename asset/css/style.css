@@ -80,23 +80,65 @@ section {
 
 
 footer {
+    padding: 1rem 0.5rem 1rem 0.5rem;
     height: 100px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
 
     #music_left {
-        background-color: burlywood;
-        width:30%;
+        width: 30%;
+        padding: 0 0.25rem 0 0.25rem;
+        display: flex;
+        justify-content:space-between;
+
+        #left_image {
+            width: 30%;
+            align-self: center;
+
+            img {
+                max-width: 20px;
+
+            }
+        }
+
+        #left_name {
+            margin: 0 1rem 0 0.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h3 {
+                font-size: 8px;
+                color: white;
+            }
+
+            p {
+                font-size: 6px;
+                color: grey;
+            }
+
+        }
+
+        #left_icon {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+    
+        }
     }
 
+
+
     #music_central {
+        width: 60%;
         background-color: rgb(173, 173, 173);
-        width:30%;
     }
 
     #music_right {
+        width: 30%;
         background-color: rgb(255, 247, 0);
-        width:30%;
     }
 }
