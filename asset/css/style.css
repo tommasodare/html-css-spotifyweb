@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 main {
@@ -13,16 +14,89 @@ main {
 
 nav {
     width: 10%;
-    min-height: 600px;
+    min-height: 1200px;
     background-color: chocolate;
 }
 
 section {
     width: 90%;
+    min-height: 1200px;
     background-color: darkgrey;
 }
+
+.top {
+    width:100%;
+    height: 50px;
+    background-color: blue;
+}
+
+.central {
+    padding: 1rem 1rem 1rem 1rem;
+
+    #central_options {
+        height: 30px;
+        background-color: brown;
+    }
+
+    #played {
+        height: 300px;
+        background-color: azure;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #created {
+        height: 300px;
+        background-color: rgb(255, 0, 149);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #popular {
+        height: 300px;
+        background-color: rgb(0, 255, 106);
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+#played .song {
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+}
+
+#created .song {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 108, 92);
+}
+
+#popular .song {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(186, 168, 180);
+}
+
 
 footer {
     height: 100px;
     background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: space-between;
+
+    #music_left {
+        background-color: burlywood;
+        width:30%;
+    }
+
+    #music_central {
+        background-color: rgb(173, 173, 173);
+        width:30%;
+    }
+
+    #music_right {
+        background-color: rgb(255, 247, 0);
+        width:30%;
+    }
 }
