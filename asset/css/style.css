@@ -6,7 +6,7 @@
 }
 
 main {
-    background-color: aqua;
+    background-color: blue;
     height: calc(100vh - 100px);
     overflow-y: auto;
     display: flex;
@@ -21,7 +21,7 @@ nav {
 section {
     width: 90%;
     min-height: 1200px;
-    background-color: darkgrey;
+    background-color: rgb(20, 25, 34);
 }
 
 .top {
@@ -47,8 +47,24 @@ section {
     padding: 1rem 1rem 1rem 1rem;
 
     #central_options {
-        height: 30px;
-        background-color: brown;
+        min-height: 50px;
+        
+
+        #central_list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 0.5rem;
+            gap: 0.5rem;
+            padding-bottom: 1rem;
+
+            a {
+                font-size: 8px;
+                text-decoration: none;
+                color: #6f7277;
+            }
+        }
     }
 
     #played {
