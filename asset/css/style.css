@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    background-color: aqua;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    display: flex;
+}
+
+nav {
+    width: 10%;
+    min-height: 600px;
+    background-color: chocolate;
+}
+
+section {
+    width: 90%;
+    background-color: darkgrey;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+}
