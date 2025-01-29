@@ -6,7 +6,7 @@
 }
 
 main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     overflow-y: auto;
     display: flex;
     background-color: rgb(20, 25, 34);
@@ -36,8 +36,6 @@ nav {
         
 
         .nav_icon {
-            display: flex;
-            align-items: center;
 
             img {
                 width: 50%;
@@ -83,7 +81,6 @@ nav {
     #bottom_nav {
         text-align: center;
         color:grey;
-        justify-content: flex-end;
 
         p {
             font-size: 8px;
@@ -96,11 +93,11 @@ nav {
         }
 
         #profile_box {
-            display: flex;
-            align-items: center;
 
             img {
                 width: 50%;
+                background-color: grey;
+                border-radius: 50%;
             }
 
             p {
@@ -423,4 +420,118 @@ footer {
             background-color: hwb(0 50% 50%);
         }
     }
+}
+
+@media screen and (min-width:425px) {
+
+    nav {
+        width: 30%;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    
+        #logo_box {
+            text-align: center;
+            padding: 0.5rem 0 1rem 0;
+    
+    
+            #logo {
+                display: block;
+                width: 70%;
+            }
+    
+            #logo_small {
+                display: none;
+            }
+        }
+    
+        #nav_box {
+
+            padding-bottom: 1rem;
+    
+            .nav_icon {
+                display: flex;
+                align-items: center;
+    
+                img {
+                    width: 15%;
+                margin-right: 0.25rem;
+                }
+    
+                p {
+                    font-size: 8px;
+                    color: grey;
+                    display:block;
+                }
+            }
+        
+        }
+    
+        #nav_titol {
+            color: white;
+            font-size: 6px;
+            display: block;
+            padding-bottom: 0.5rem;
+        }
+    
+        #playlist {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color:grey;
+            gap: 0.5rem;
+            padding-bottom: 0.5rem;
+    
+            p {
+                font-size: 10px;
+            }
+        }
+    
+        #playlist_list {
+            list-style: none;
+            display: block;
+            padding-bottom: 1rem;
+            
+    
+            a {
+                text-decoration: none;
+                font-size: 7px;
+                color: white;
+                gap: 0.25rem;
+            }
+    
+    
+        }
+    
+        #bottom_nav {
+            display: flex;
+            color:grey;
+            flex-direction: column;
+            p {
+                font-size: 8px;
+                display: block;
+            }
+    
+            hr {
+                display: block;
+            }
+            
+    
+            #profile_box {
+                display: flex;
+                align-items: center;
+            
+    
+                img {
+                    width: 10%;
+                }
+    
+                p {
+                    font-size: 8px;
+                    color: white;
+                    display: block;
+                }
+            }
+        }
+    
+    }  
+
 }
