@@ -13,8 +13,10 @@ main {
 }
 
 nav {
+    min-height: 1000px;
     width: 10%;
     background-color: black;
+    padding-top: 1rem;
 
     #logo_box {
         text-align: center;
@@ -111,17 +113,19 @@ nav {
 }
 
 section {
-    width: 90%;
+    width:90%; 
     background-color: rgb(20, 25, 34);
 }
 
 .top {
-    width:100%;
+    width:90%;
     height: 50px;
     background-color: #080b12;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    z-index:1;
 
     p {
         font-size: 8px;
@@ -135,7 +139,8 @@ section {
 }
 
 .central {
-    padding: 1rem 1rem 1rem 1rem;
+    min-height: 1000px;
+    padding: 4rem 1rem 1rem 1rem;
 
     #central_options {
         min-height: 50px;
@@ -281,10 +286,13 @@ section {
 
 
 footer {
-    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+    padding: 0.5rem 0.25rem 1rem 0.25rem;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
 
     #music_left {
         width: 30%;
@@ -342,7 +350,7 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.5rem 0 0.5rem 0;
+            padding: 0.5rem 0.5rem 0;
 
             i {
                 font-size: 10px;
@@ -425,7 +433,7 @@ footer {
 @media screen and (min-width:425px) {
 
     nav {
-        width: 30%;
+        width: 35%;
         padding: 1rem 0.5rem 1rem 0.5rem;
     
         #logo_box {
@@ -532,6 +540,60 @@ footer {
             }
         }
     
-    }  
+    }
+    
+    section {
+        width:65%;
+        
+    }
+
+    .central {
+        padding: 4rem 1rem 1rem 1rem;
+    
+        #central_options {
+            
+    
+            #central_list {
+                width:90%;
+                margin:auto;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 0.75rem;
+                padding-bottom: 1rem;
+    
+                a {
+                    font-weight: bold;
+                    font-size: 7px;
+                    text-decoration: none;
+                    color: #6f7277;
+                }
+            }
+        }
+
+    }
+    
+    .top {
+        width:275px;
+        margin: auto;
+        height: 50px;
+        background-color: #080b12;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        z-index:1;
+    
+        p {
+            font-size: 8px;
+            color: white;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            margin-right: 0.5rem;
+            border: 1px solid white;
+            border-radius: 30px;
+        }
+    
+    }
 
 }
