@@ -14,7 +14,103 @@ main {
 
 nav {
     width: 10%;
-    background-color: chocolate;
+    background-color: black;
+
+    #logo_box {
+        text-align: center;
+        padding: 0.5rem 0 0.5rem 0;
+
+
+        #logo {
+            display: none;
+        }
+
+        #logo_small {
+            width: 50%;
+        }
+    }
+
+    #nav_box {
+
+        text-align: center;
+        
+
+        .nav_icon {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 50%;
+            }
+
+            p {
+                font-size: 10px;
+                color: grey;
+                display:none;
+            }
+        }
+    
+    }
+
+    #nav_titol {
+        color: grey;
+        font-size: 7px;
+        display: none;
+    }
+
+    #playlist {
+        display: flex;
+        color:grey;
+        display: none;
+
+        p {
+            font-size: 6px;
+        }
+    }
+
+    #playlist_list {
+        list-style: none;
+        display: none;
+        
+
+        a {
+            text-decoration: none;
+        }
+
+
+    }
+
+    #bottom_nav {
+        text-align: center;
+        color:grey;
+        justify-content: flex-end;
+
+        p {
+            font-size: 8px;
+            display: none;
+        }
+
+        hr {
+            display: none;
+
+        }
+
+        #profile_box {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 50%;
+            }
+
+            p {
+                font-size: 8px;
+                color: white;
+                display: none;
+            }
+        }
+
+    }
 }
 
 section {
