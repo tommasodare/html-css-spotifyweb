@@ -86,7 +86,7 @@ nav {
         color:grey;
         height: 500px;
         display: flex;
-        justify-content: flex-end;
+        align-items: flex-end;
 
         p {
             font-size: 8px;
@@ -521,14 +521,14 @@ footer {
             height: 500px;
             display: flex;
             flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
             gap: 0.5rem;
 
 
             p {
                 font-size: 8px;
-                display: block;
-                display: flex;
-                justify-content: flex-start;
+                display: inline;
             }
     
             hr {
@@ -1082,5 +1082,462 @@ footer {
     
 
 
+}
+
+@media screen and (min-width:1024px) {
+
+
+    main {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+        display: flex;
+        background-color: rgb(20, 25, 34);
+    }
+
+    .top {
+        width:75%;
+        height: 50px;
+        background-color: #080b12;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        z-index:1;
+    
+        p {
+            font-size: 10px;
+            color: white;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            margin-right: 0.5rem;
+            border: 1px solid white;
+            border-radius: 30px;
+        }
+    
+    }
+
+    nav {
+        width: 25%;
+        padding: 1rem 0.5rem 1rem 1rem;
+    
+        #logo_box {
+            text-align: center;
+            padding: 0.5rem 0 1rem 0;
+    
+    
+            #logo {
+                display: block;
+                width: 60%;
+            }
+    
+            #logo_small {
+                display: none;
+            }
+        }
+    
+        #nav_box {
+
+            padding-bottom: 1rem;
+    
+            .nav_icon {
+                display: flex;
+                align-items: center;
+                padding-bottom: 0.35rem;
+    
+                img {
+                    width: 10%;
+                    margin-right: 0.25rem;
+                }
+    
+                p {
+                    font-size: 12px;
+                    color: grey;
+                    display:block;
+                    font-weight: bold;
+                }
+            }
+        
+        }
+    
+        #nav_titol {
+            color: white;
+            font-size: 10px;
+            display: inline;
+            padding-bottom: 0.5rem;
+        }
+    
+        #playlist {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color:grey;
+            gap: 0.5rem;
+            padding-bottom: 0.5rem;
+    
+            p {
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    
+        #playlist_list {
+            list-style: none;
+            display: block;
+            padding-bottom: 1rem;
+    
+            a {
+                text-decoration: none;
+                font-size: 12px;
+                color: grey;
+                font-weight: 700;
+            }
+    
+    
+        }
+    
+        #bottom_nav {
+            text-align: center;
+            color:grey;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+
+            p {
+                font-size: 8px;
+                display: block;
+                display: flex;
+                justify-content: flex-start;
+            }
+    
+            hr {
+                display: block;
+                width: 90%;
+            }
+            
+    
+            #profile_box {
+
+                display: flex;
+                align-items: center;
+            
+                img {
+                    width: 10%;
+                    margin-right: 0.35rem;
+                }
+    
+                p {
+                    font-size: 9px;
+                    color: white;
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+    }
+
+    section {
+        width:80%;
+    }
+
+
+    .central {
+        padding: 4rem 1rem 1rem 1rem;
+    
+        #central_options {
+
+            width:80%;
+            margin:auto;
+            
+    
+            #central_list {
+                width:90%;
+                margin:auto;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+    
+                a {
+                    font-weight: bold;
+                    font-size: 11px;
+                    text-decoration: none;
+                    color: #6f7277;
+                }
+            }
+        }
+
+        #played {
+            background-color: rgb(20, 25, 34);
+            padding-bottom: 1rem;
+    
+            #played_titol {
+                color: white;
+                font-size: 13px;
+                padding-bottom: 1rem;
+            }
+    
+            #album_box {
+                display: flex;
+                justify-content: flex-start;
+    
+                .album {
+                    width: 16.5%;
+                    padding-bottom: 1rem;
+    
+                    img {
+                        width: 100%;
+                    }
+    
+                    h3 {
+                        font-size: 12px;
+                        color: white;
+                        text-align: center;
+                    }
+    
+                    p {
+                        font-size: 10px;
+                        color: white;
+                        text-align: center;
+                    }
+                }
+                
+            }
+        }
+    
+        #created {
+            background-color: rgb(20, 25, 34);
+            padding-bottom: 1rem;
+    
+            #created_titol {
+                color: white;
+                padding-bottom: 1rem;
+    
+                h2 {
+                    font-size: 18px;
+                }
+    
+                p {
+                    font-size: 10px;
+                    color: grey;
+                }
+            }
+    
+            #created_box {
+                display: flex;
+                justify-content: start;
+    
+                .created_album {
+                    width: 16.5%;
+                    margin-right: 0.5rem;
+    
+                    img {
+                        width: 100%;
+                    }
+    
+                    h3 {
+                        font-size: 12px;
+                        color: white;
+                        text-align: center;
+                    }
+                }
+    
+            
+            }
+        }
+    
+        #popular {
+            background-color: rgb(20, 25, 34);
+    
+            #popular_titol {
+                color: white;
+                padding-bottom: 1rem;
+    
+                h2 {
+                    font-size: 18px;
+                }
+    
+                p {
+                    font-size: 10px;
+                    color: grey;
+                }
+            }
+    
+            #popular_box {
+                display: flex;
+                justify-content:flex-start;
+    
+                .popular_album {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 16.5%;
+                    margin-right: 0.5rem;
+    
+                    img {
+                        width: 100%;
+                        border-radius: 50%;
+                        margin-bottom: 0.25rem;
+                    }
+    
+                    h3 {
+                        font-size: 12px;
+                        color: white;
+                        text-align: center;
+                    }
+                }
+    
+            
+            }
+        }
+
+    }
+
+    footer {
+        height:50px;
+        padding: 0.5rem 0.25rem 1rem 0.25rem;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+    
+        #music_left {
+            width: 30%;
+            padding: 0 0.25rem 0 1rem;
+            display: flex;
+            justify-content:start;
+    
+            #left_image {
+    
+                img {
+                    max-width: 30px;
+    
+                }
+            }
+    
+            #left_name {
+                margin: 0 1rem 0 0.25rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                h3 {
+                    font-size: 12px;
+                    color: white;
+                }
+    
+                p {
+                    font-size: 8px;
+                    color: grey;
+                }
+    
+            }
+    
+            #left_icon {
+    
+                i {
+                    font-size: small;
+                }
+            }
+        }
+    
+    
+    
+        #music_central {
+            width: 40%;
+            margin: 0 0.25rem 0 0.25rem;
+    
+            #central_icon {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5rem 0.5rem 0;
+    
+                i {
+                    font-size: 10px;
+                }
+        
+                .fa-circle-play {
+                    font-size: 15px;
+                }
+            }
+    
+            #central_line {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                div {
+                    color: white;
+                    font-size: 8px;
+    
+                }
+    
+                #line {
+                   width: 90%;
+                   margin: auto;
+                   display: flex;
+                   justify-content: center;
+                   margin: 0 0.5rem 0 0.5rem;
+                }
+    
+                #listen {
+                    height: 2px;
+                    width:20%;
+                    background-color: hwb(0 96% 20%);
+                }
+    
+                #to_listen {
+                    height: 2px;
+                    width:80%;
+                    background-color: hwb(0 50% 50%);
+                }
+            }
+    
+        
+        }
+    
+        #music_right {
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            align-self: center;
+            padding: 0 0.25rem 0 0.25rem;
+    
+            i {
+                font-size: 7px;
+                width: 12%;
+    
+            }
+    
+            #line_2 {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             }
+    
+            #listen_2 {
+                height: 2px;
+                width:20%;
+                background-color: hwb(0 96% 20%);
+            }
+    
+            #to_listen_2 {
+                height: 2px;
+                width:80%;
+                background-color: hwb(0 50% 50%);
+            }
+        }
+    }
+
+    
+
+    
 }
 
