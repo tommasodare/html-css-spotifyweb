@@ -256,6 +256,10 @@ section {
                     text-align: center;
                 }
 
+                .hover:hover {
+                    display:block;
+                }
+
             }
 
             
