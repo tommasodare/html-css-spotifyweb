@@ -227,15 +227,15 @@ section {
                 padding-bottom: 1rem;
                 position:relative;
 
-                .hover:hover {
+
+                .hover{
                     width:100%;
                     font-size: 40px;
                     color:white;
-                    display:flex;
-                    justify-content: center;
                     position: absolute;
-                    display: block;
-
+                    text-align: center;
+                    top:2rem;
+                    display: none;
                 }
 
                 img {
@@ -255,10 +255,12 @@ section {
                     text-align: center;
                 }
 
-                .hover:hover {
-                    display:block;
-                }
+            }
 
+            .album:hover {
+                .hover {
+                    display: block;
+                }
             }
 
             
