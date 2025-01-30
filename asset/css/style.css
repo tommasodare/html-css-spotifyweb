@@ -36,6 +36,11 @@ nav {
     #nav_box {
 
         text-align: center;
+
+        #home {
+            border-left: 2px solid green;
+            border-left-width: 50%;
+        }
         
 
         .nav_icon {
@@ -48,6 +53,13 @@ nav {
                 font-size: 10px;
                 color: grey;
                 display:none;
+            }
+        }
+
+        .nav_icon:hover {
+            
+            p {
+                color: white;
             }
         }
     
@@ -73,11 +85,19 @@ nav {
         list-style: none;
         display: none;
         
+        #list {
+            list-style: none;
 
-        a {
-            text-decoration: none;
+            a {
+                text-decoration: none;
+    
+            }
+    
+            :hover {
+                color:white;
+            }
         }
-
+        
 
     }
 
@@ -114,6 +134,10 @@ nav {
         }
 
     }
+
+    a:hover, p:hover {
+        color: white;
+    }
 }
 
 section {
@@ -138,6 +162,11 @@ section {
         margin-right: 0.5rem;
         border: 1px solid white;
         border-radius: 30px;
+
+    }
+
+    p:hover {
+        zoom: 110%;
     }
 
 }
@@ -164,6 +193,15 @@ section {
                 font-size: 7px;
                 text-decoration: none;
                 color: #6f7277;
+
+            }
+
+            a:hover {
+                color: white;
+            }
+
+            #evidence {
+                border-bottom: 2px solid green;
             }
         }
     }
@@ -178,6 +216,7 @@ section {
             padding-bottom: 1rem;
         }
 
+
         #album_box {
             display: flex;
             justify-content: space-between;
@@ -186,9 +225,23 @@ section {
             .album {
                 width: 48%;
                 padding-bottom: 1rem;
+                position:relative;
+
+                .hover {
+                    width:100%;
+                    font-size: 40px;
+                    color:white;
+                    display:flex;
+                    justify-content: center;
+                    position: absolute;
+                    top:35px;
+                    display: none;
+
+                }
 
                 img {
                     width: 100%;
+
                 }
 
                 h3 {
@@ -202,10 +255,12 @@ section {
                     color: white;
                     text-align: center;
                 }
+
             }
 
             
         }
+
     }
 
     #created {
@@ -330,6 +385,11 @@ footer {
             p {
                 font-size: 6px;
                 color: grey;
+
+            }
+
+            :hover {
+                color: white;
             }
 
         }
@@ -342,6 +402,10 @@ footer {
 
             i {
                 font-size: xx-small;
+            }
+
+            i:hover {
+                zoom: 130%;
             }
         }
     }
@@ -365,12 +429,25 @@ footer {
             .fa-circle-play {
                 font-size: 15px;
             }
+
+        }
+
+        :hover .fa-circle-play {
+            zoom:110%;
         }
 
         #central_line {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            :hover {
+                #listen {
+                    background-color:rgb(0, 255, 0);
+
+                }
+                   
+            }
 
             div {
                 color: white;
@@ -397,7 +474,10 @@ footer {
                 width:80%;
                 background-color: hwb(0 50% 50%);
             }
+
         }
+
+        
 
     
     }
@@ -408,6 +488,14 @@ footer {
         justify-content: space-between;
         align-self: center;
         padding: 0 0.25rem 0 0.25rem;
+
+        :hover {
+            #listen_2 {
+                background-color:rgb(0, 255, 0);
+
+            }
+               
+        }
 
         i {
             font-size: 7px;
@@ -508,7 +596,7 @@ footer {
             a {
                 text-decoration: none;
                 font-size: 7px;
-                color: white;
+                color: grey;
                 gap: 0.25rem;
             }
     
@@ -1252,7 +1340,7 @@ footer {
             
     
             #central_list {
-                width:90%;
+                width:100%;
                 margin:auto;
                 list-style: none;
                 display: flex;
@@ -1260,6 +1348,7 @@ footer {
                 flex-wrap: wrap;
                 gap: 1.5rem;
                 padding-bottom: 1rem;
+                padding-top: 1rem;
     
                 a {
                     font-weight: bold;
