@@ -13,6 +13,8 @@ main {
 }
 
 nav {
+    height: calc(100vh - 50px);
+    overflow-y:auto;
     width: 34px;
     background-color: black;
     padding-top: 1rem;
@@ -146,14 +148,12 @@ section {
 }
 
 .top {
-    width:90%;
+    width: calc(100vw -34px);
     height: 50px;
     background-color: #080b12;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: fixed;
-    z-index:1;
 
     p {
         font-size: 8px;
@@ -172,8 +172,8 @@ section {
 }
 
 .central {
-    padding: 4rem 1rem 1rem 1rem;
-    height: calc(100vh - 50px);
+    padding: 1rem 1rem 1rem 1rem;
+    height: calc(100vh - 100px);
     overflow-y: auto;
 
     #central_options {
@@ -227,15 +227,14 @@ section {
                 padding-bottom: 1rem;
                 position:relative;
 
-                .hover {
+                .hover:hover {
                     width:100%;
                     font-size: 40px;
                     color:white;
                     display:flex;
                     justify-content: center;
                     position: absolute;
-                    top:35px;
-                    display: none;
+                    display: block;
 
                 }
 
@@ -656,7 +655,7 @@ footer {
     }
 
     .central {
-        padding: 4rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
     
         #central_options {
             
@@ -683,15 +682,11 @@ footer {
     }
     
     .top {
-        width:275px;
-        margin: auto;
         height: 50px;
         background-color: #080b12;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        position: fixed;
-        z-index:1;
     
         p {
             font-size: 8px;
@@ -857,7 +852,7 @@ footer {
     }
 
     .central {
-        padding: 4rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
     
         #central_options {
             
@@ -1009,15 +1004,11 @@ footer {
     }
     
     .top {
-        min-width:575px;
-        margin: auto;
         height: 50px;
         background-color: #080b12;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        position: fixed;
-        z-index:1;
     
         p {
             font-size: 8px;
@@ -1187,14 +1178,12 @@ footer {
     }
 
     .top {
-        width:75%;
         height: 50px;
         background-color: #080b12;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        position: fixed;
-        z-index:1;
+
     
         p {
             font-size: 10px;
@@ -1208,6 +1197,7 @@ footer {
     }
 
     nav {
+        min-height: 100%;
         width: 25%;
         padding: 1rem 0.5rem 1rem 1rem;
     
@@ -1335,7 +1325,7 @@ footer {
 
 
     .central {
-        padding: 4rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
     
         #central_options {
 
